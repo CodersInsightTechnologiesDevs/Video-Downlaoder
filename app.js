@@ -10,6 +10,10 @@ const vimeo = require("./routes/vimeo");
 
 const app = express();
 
+app.get("/",(req,res) =>{
+     res.send("Server is running now")
+});
+
 app.use(express.urlencoded({ extended: true }));
 app.use("/api", tiktok);
 app.use("/api", facebook);

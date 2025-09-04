@@ -7,6 +7,7 @@ const linkedin = require("./routes/linkedin");
 const snackvideo = require("./routes/snackvideo");
 const pinterest = require("./routes/pinterest");
 const vimeo = require("./routes/vimeo");
+const explore = require("./routes/explore");
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use("/api", linkedin);
 app.use("/api", snackvideo);
 app.use("/api", pinterest);
 app.use("/api", vimeo);
+app.use("/api", explore);
 
 const PORT = 3000
 app.listen(PORT,()=>{
